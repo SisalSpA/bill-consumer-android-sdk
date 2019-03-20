@@ -1,1 +1,2 @@
-# bill-consumer-android-sdk
+Bill Consumer Android SDK
+=========================
