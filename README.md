@@ -125,8 +125,8 @@ Verrà restituito un `enum` di tipo `BillConsumerSDKResponse` all'interno di una
 **Kotlin**
 
 ```kotlin
-val bundle = Bundle()
-bundle.putString(PayParameters.VAT_CODE.value(), vatCode)
+val parameters = Bundle()
+parameters.putString(PayParameters.VAT_CODE.value(), vatCode)
 parameters.putString(PayParameters.TRANSACTION_TOKEN.value(), transactionToken)
 parameters.putString(PayParameters.TIMEOUT.value(), timeout)
 BillConsumerSDK.getInstance().pay(parameters)
@@ -172,8 +172,8 @@ Verrà restituito un `enum` di tipo `BillConsumerSDKResponse` all'interno di una
 **Kotlin**
 
 ```kotlin
-val bundle = Bundle()
-bundle.putString(PayParameters.VAT_CODE.value(), vatCode)
+val parameters = Bundle()
+parameters.putString(PayParameters.VAT_CODE.value(), vatCode)
 parameters.putString(PayParameters.AMOUNT.value(), amount)
 parameters.putString(PayParameters.LATITUDE.value(), latitude)
 parameters.putString(PayParameters.LONGITUDE.value(), longitude)
@@ -233,7 +233,8 @@ Verrà restituito un `enum` di tipo `BillConsumerSDKResponse` all'interno di una
 
 ```kotlin
 BillConsumerSDK.getInstance().set(context)
-val bundle = Bundle()
+
+val parameters = Bundle()
 parameters.putString(PayParameters.TRANSACTION_TOKEN_ONLY.value(), transactionToken)
 BillConsumerSDK.getInstance().pay(parameters)
 ```
@@ -242,6 +243,7 @@ BillConsumerSDK.getInstance().pay(parameters)
 
 ```java
 BillConsumerSDK.getInstance().set(context);
+
 Bundle parameters = new Bundle();
 parameters.putString(PayParameters.TRANSACTION_TOKEN_ONLY.value(), transactionToken);
 BillConsumerSDK.getInstance().pay(parameters)
