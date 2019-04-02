@@ -16,7 +16,7 @@ Tutte le modifiche importanti a questo progetto saranno documentate in questo fi
 ## [1.0.5](https://github.com/SisalSpA/bill-consumer-android-sdk/releases/tag/1.0.5)
 ### 02 Aprile 2019
 ### Aggiunto
-- Aggiunto il nuovo caso `SDKConsumerTransactionCanceled` in `BillConsumerSDKResponse` enum
+- Aggiunto il nuovo caso `SDK_CONSUMER_TRANSACTION_CANCELED` in `BillConsumerSDKResponse` enum
 
 ---
 

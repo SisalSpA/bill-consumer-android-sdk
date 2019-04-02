@@ -33,7 +33,7 @@ Requisiti
 
 | **Versione**  | **Android** |
 |---------------|-------------|
-| 1.0.0...1.0.4 | 5.0+        |
+| 1.0.0...1.0.5 | 5.0+        |
 
 Installazione ed Utilizzo
 =========================
@@ -112,13 +112,14 @@ Nel caso in cui si sia in possesso di un token di transazione bisogna aggiungere
 
 Verrà restituito un `enum` di tipo `BillConsumerSDKResponse` all'interno di una lambda:
 
-| **Parametro**               | **Note**                                                            |
-|-----------------------------|---------------------------------------------------------------------|
-| SDK_CONSUMER_GENERIC_ERROR  | Errore generico                                                     |
-| SDK_CONSUMER_BILL_OPENED    | L'app Bill è installata ed è stata aperta                           |
-| SDK_CONSUMER_TRANSACTION_OK | La WebView è stata aperta e la transazione è andata a buon fine     |
-| SDK_CONSUMER_TRANSACTION_KO | La WebView è stata aperta e la transazione non è andata a buon fine |
-| SDK_CONSUMER_TIMEOUT        | La WebView è stata aperta ma la transazione è andata in timeout     |
+| **Parametro**                     | **Note**                                                            |
+|-----------------------------------|---------------------------------------------------------------------|
+| SDK_CONSUMER_GENERIC_ERROR        | Errore generico                                                     |
+| SDK_CONSUMER_BILL_OPENED          | L'app Bill è installata ed è stata aperta                           |
+| SDK_CONSUMER_TRANSACTION_OK       | La WebView è stata aperta e la transazione è andata a buon fine     |
+| SDK_CONSUMER_TRANSACTION_KO       | La WebView è stata aperta e la transazione non è andata a buon fine |
+| SDK_CONSUMER_TRANSACTION_TIMEOUT  | La WebView è stata aperta ma la transazione è andata in timeout     |
+| SDK_CONSUMER_TRANSACTION_CANCELED | La WebView è stata aperta ma la transazione è stata annullata       |
 
 #### Esempio di Codice
 
@@ -219,13 +220,14 @@ Nel caso in cui si sia in possesso del solo token di transazione bisogna aggiung
 
 Verrà restituito un `enum` di tipo `BillConsumerSDKResponse` all'interno di una lambda:
 
-| **Parametro**               | **Note**                                                            |
-|-----------------------------|---------------------------------------------------------------------|
-| SDK_CONSUMER_GENERIC_ERROR  | Errore generico                                                     |
-| SDK_CONSUMER_BILL_OPENED    | L'app Bill è installata ed è stata aperta                           |
-| SDK_CONSUMER_TRANSACTION_OK | La WebView è stata aperta e la transazione è andata a buon fine     |
-| SDK_CONSUMER_TRANSACTION_KO | La WebView è stata aperta e la transazione non è andata a buon fine |
-| SDK_CONSUMER_TIMEOUT        | La WebView è stata aperta ma la transazione è andata in timeout     |
+| **Parametro**                     | **Note**                                                            |
+|-----------------------------------|---------------------------------------------------------------------|
+| SDK_CONSUMER_GENERIC_ERROR        | Errore generico                                                     |
+| SDK_CONSUMER_BILL_OPENED          | L'app Bill è installata ed è stata aperta                           |
+| SDK_CONSUMER_TRANSACTION_OK       | La WebView è stata aperta e la transazione è andata a buon fine     |
+| SDK_CONSUMER_TRANSACTION_KO       | La WebView è stata aperta e la transazione non è andata a buon fine |
+| SDK_CONSUMER_TRANSACTION_TIMEOUT  | La WebView è stata aperta ma la transazione è andata in timeout     |
+| SDK_CONSUMER_TRANSACTION_CANCELED | La WebView è stata aperta ma la transazione è stata annullata       |
 
 #### Esempio di Codice
 
@@ -271,14 +273,15 @@ I possibili risultati sono:
 
 Verrà restituito un `enum` di tipo `BillConsumerSDKResponse` all'interno di una lambda:
 
-| **Parametro**                     | **Note**                                                            |
-|-----------------------------------|---------------------------------------------------------------------|
-| SDK_CONSUMER_GENERIC_ERROR        | Errore generico                                                     |
-| SDK_CONSUMER_GENERIC_STATUS_ERROR | Errore generico con lo stato della transazione                      |
-| SDK_CONSUMER_TRANSACTION_OK       | La WebView è stata aperta e la transazione è andata a buon fine     |
-| SDK_CONSUMER_TRANSACTION_KO       | La WebView è stata aperta e la transazione non è andata a buon fine |
-| SDK_CONSUMER_TRANSACTION_PENDING  | L'app Bill è installata ed è stata aperta                           |
-| SDK_CONSUMER_TRANSACTION_TIMEOUT  | La WebView è stata aperta ma la transazione è andata in timeout     |
+| **Parametro**                     | **Note**                                       |
+|-----------------------------------|------------------------------------------------|
+| SDK_CONSUMER_GENERIC_ERROR        | Errore generico                                |
+| SDK_CONSUMER_GENERIC_STATUS_ERROR | Errore generico con lo stato della transazione |
+| SDK_CONSUMER_TRANSACTION_OK       | La transazione è andata a buon fine            |
+| SDK_CONSUMER_TRANSACTION_KO       | La transazione non è andata a buon fine        |
+| SDK_CONSUMER_TRANSACTION_PENDING  | L'app Bill è installata ed è stata aperta      |
+| SDK_CONSUMER_TRANSACTION_TIMEOUT  | La transazione è andata in timeout             |
+| SDK_CONSUMER_TRANSACTION_CANCELED | La transazione è stata annullata               |
 
 #### Esempio di Codice
 
