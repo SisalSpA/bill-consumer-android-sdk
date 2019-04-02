@@ -2,7 +2,7 @@
 <img src="https://www.bill.it/documents/100506/373235/BillBanner.png" alt="Bill Banner">
 </p>
 
-[![Version](https://img.shields.io/badge/version-1.0.4-blue.svg)](https://github.com/SisalSpA/bill-consumer-android-sdk/releases)
+[![Version](https://img.shields.io/badge/version-1.0.5-blue.svg)](https://github.com/SisalSpA/bill-consumer-android-sdk/releases)
 [![Platform](https://img.shields.io/badge/platform-Android-cc9c00.svg)](https://www.android.com)
 [![License](https://img.shields.io/badge/license-Apache%202-lightgrey.svg)](https://github.com/SisalSpA/bill-consumer-android-sdk/blob/master/LICENSE)
 
