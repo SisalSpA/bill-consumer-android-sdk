@@ -14,7 +14,7 @@ Tutte le modifiche importanti a questo progetto saranno documentate in questo fi
 ---
 
 ## [1.0.6](https://github.com/SisalSpA/bill-consumer-android-sdk/releases/tag/1.0.6)
-### 02 Aprile 2019
+### 08 Aprile 2019
 ### Migliorato
 - Migliorata l'integrazione con le applicazioni esterne
 
