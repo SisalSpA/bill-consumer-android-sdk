@@ -9,7 +9,14 @@ Tutte le modifiche importanti a questo progetto saranno documentate in questo fi
 ---
 
 ### 1.x Rilasci
-- `1.0.x` Rilasci - [1.0.0](#100) | [1.0.1](#101) | [1.0.2](#102) | [1.0.3](#103) | [1.0.4](#104) | [1.0.5](#105)
+- `1.0.x` Rilasci - [1.0.0](#100) | [1.0.1](#101) | [1.0.2](#102) | [1.0.3](#103) | [1.0.4](#104) | [1.0.5](#105) | [1.0.6](#106)
+
+---
+
+## [1.0.6](https://github.com/SisalSpA/bill-consumer-android-sdk/releases/tag/1.0.6)
+### 02 Aprile 2019
+### Migliorato
+- Migliorata l'integrazione con le applicazioni esterne
 
 ---
 
